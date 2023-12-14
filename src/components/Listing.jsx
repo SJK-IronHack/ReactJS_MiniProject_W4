@@ -1,19 +1,18 @@
-import { useState } from "react"
-
-
+import { useState } from "react";
 
 const Listing = ({ listingData }) => {
-    const [items, setItems] = useState(listingData)
-    return (
-        <div className="listing">
-            <h1>Listing</h1>
-            <ul>
-                {items.map((i) => {
-                    <h1>{i.total_count}</h1>
-})}
-            </ul>
-        </div>
-    )
-}
+  const [items, setItems] = useState(listingData || []);
 
-export default Listing
+  return (
+    <div className="listing">
+      <h1>Listing</h1>
+      <ul>
+        {items.map((i) => (
+          <li key={i.id}>{i.total_count}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default Listing;
