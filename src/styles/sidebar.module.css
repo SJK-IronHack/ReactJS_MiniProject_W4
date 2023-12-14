@@ -1,0 +1,25 @@
+.container {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  padding-top: 20px;
+  z-index: -1;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.btn {
+  background-color: #f0f0f0;
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: 1px #212529;
+  border-bottom: solid;
+}
+
+.btn:hover {
+  background-color: #f9f9f9;
+  border: 1px #212529;
+}

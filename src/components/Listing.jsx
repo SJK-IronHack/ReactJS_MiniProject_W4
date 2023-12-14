@@ -1,17 +1,10 @@
-import { useState } from "react";
+import classes from "../styles/list.module.css";
 
-const Listing = ({ listingData }) => {
-  const [items, setItems] = useState(listingData || []);
-
+const Listing = () => {
   return (
-    <div className="listing">
-      <h1>Listing</h1>
-      <ul>
-        {items.map((i) => (
-          <li key={i.id}>{i.total_count}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className={classes.container}>List Comp</div>
+    </>
   );
 };
 
