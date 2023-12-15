@@ -1,6 +1,7 @@
 import classes from "../styles/list.module.css";
-import ListingItem from "./ListItem";
 import Rentals from '../assets/rentals.json'
+import ListingDetail from "./ListingDetail";
+
 
 const Listing = () => {
   return (
@@ -11,7 +12,7 @@ const Listing = () => {
           {items.name}</p> 
           <p>{items.city}</p>
           <p>{items.country}</p>
-          <img className={classes.imgTumbnail} src={items.picture_url.url}/>
+          <img className={classes.imTumbnail} src={items.picture_url.url}/>
           </div>;
       })}
     </>
