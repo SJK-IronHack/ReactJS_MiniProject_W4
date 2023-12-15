@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "../styles/list.module.css";
 
-function ListingItem({ obj }) {
+function ListingItem({obj}) {
   return (
     <div className={classes.listItem} key={obj.id}>
       {/* Render your item content here */}
