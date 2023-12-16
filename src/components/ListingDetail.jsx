@@ -37,7 +37,7 @@ const ListingDetail = () => {
           <p> {itemProfile.description}</p>
         </div>
 
-        <div className={classes.space}>
+        <div className={classes.houseRules}>
           <p className={classes.subHeadline}>Rules</p>
           <p className={classes.houseRules}> {itemProfile.house_rules}</p>
         </div>

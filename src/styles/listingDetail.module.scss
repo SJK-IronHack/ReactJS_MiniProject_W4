@@ -8,6 +8,7 @@
     align-content: center;
     gap: 8px;
     text-align: left;
+    margin: 16px;
 
     h3 {
         grid-row: 1 /2;
@@ -24,9 +25,12 @@
     }
     .description {
         grid-row-start: 6;
-        grid-column: 1/5;
+        grid-column: 1/6;
     }
     .space {
+        grid-column: 1/6;
+    }
+    .houseRules {
         grid-column: 1/6;
     }
 .infoBlat {

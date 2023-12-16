@@ -6,6 +6,7 @@
   align-content: center;
   gap: 8px;
   text-align: left;
+  margin: 16px;
 }
 .itemDescription h3 {
   grid-row: 1/2;
@@ -21,9 +22,12 @@
 }
 .itemDescription .description {
   grid-row-start: 6;
-  grid-column: 1/5;
+  grid-column: 1/6;
 }
 .itemDescription .space {
+  grid-column: 1/6;
+}
+.itemDescription .houseRules {
   grid-column: 1/6;
 }
 .itemDescription .infoBlat {

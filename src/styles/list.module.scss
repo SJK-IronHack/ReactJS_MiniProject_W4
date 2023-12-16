@@ -15,7 +15,7 @@
   height: auto;
   border: 1px solid black;
   margin-bottom: 8px;
-  @include BorderRadium24();
+  border-radius: 24px;
 }
 
 .listItemDescription {
