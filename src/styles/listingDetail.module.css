@@ -1,0 +1,38 @@
+.itemDescription {
+  width: 80vw;
+  display: grid;
+  grid: repeat(5, auto)/repeat(9, auto);
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+  text-align: left;
+}
+.itemDescription h3 {
+  grid-row: 1/2;
+  grid-column: 1/5;
+}
+.itemDescription img {
+  grid-column: 1/4;
+  grid-row-start: 2;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.itemDescription .description {
+  grid-row-start: 6;
+  grid-column: 1/5;
+}
+.itemDescription .space {
+  grid-column: 1/6;
+}
+.itemDescription .infoBlat {
+  padding: 16px;
+  border: 1px solid black;
+  grid-row-start: 2;
+  grid-column: 4/6;
+  border-radius: 24px;
+}
+.itemDescription .subHeadline {
+  font-size: 24px;
+}/*# sourceMappingURL=listingDetail.module.css.map */
