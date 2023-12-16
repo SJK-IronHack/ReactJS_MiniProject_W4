@@ -1,3 +1,9 @@
+
+@mixin BorderRadium24 {
+  border-radius: 24px;
+
+}
+
 .listContainer {
   width: 1100px;
   height: 510px;
@@ -15,7 +21,7 @@
   height: auto;
   border: 1px solid black;
   margin-bottom: 8px;
-  border-radius: 24px;
+  @include BorderRadium24();
 }
 
 .listItemDescription {
@@ -25,22 +31,27 @@
 
 .imgTumbnail {
   height: 80px;
-  border-radius: 24px;
+  @include BorderRadium24();
+
 }
+
 
 .listItemLink {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  align-items:  start;
+  
+  
 }
-
 .basicInfos {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-content: space-between;
-  margin-inline: 8px;
+display: flex;
+flex-direction: column;
+justify-content:left;
+align-content: space-between;
+margin-inline: 8px;
+
+
 }
 
 .listingLocation {
@@ -52,22 +63,22 @@
   font-size: 14px;
   text-transform: uppercase;
 }
-
 .price {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-inline: 16px;
   border-radius: 24px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid black;
-  padding-top: 4px;
-  padding-bottom: 4px;
+padding-top: 4px;
+padding-bottom: 4px;
 }
 
 .buttonRemove {
   padding-top: 4px;
   padding-bottom: 4px;
   height: 64px;
-}/*# sourceMappingURL=list.module.css.map */
+
+  
+}
