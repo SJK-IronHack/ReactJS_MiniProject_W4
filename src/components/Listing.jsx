@@ -34,7 +34,10 @@ const Listing = () => {
               <p>{item.name}</p>
             </div>
           </Link>
-          <Button className="buttonRemove" onClick={() => handleRemove(item.id)}>Remove</Button>
+          <div className={classes.listingButtons}>
+            <Button className="buttonRemove">Update</Button>
+            <Button className="buttonRemove" onClick={() => handleRemove(item.id)}>Remove</Button>
+          </div>
         </div>
       ))}
     </>
