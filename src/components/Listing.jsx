@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import classes from "../styles/list.module.scss";
+import classes from "../styles/list.module.css";
 import Rentals from "../assets/rentals.json";
-import { Button } from "react-bootstrap";
 
 
 const Listing = () => {
@@ -35,8 +34,8 @@ const Listing = () => {
             </div>
           </Link>
           <div className={classes.listingButtons}>
-            <Button className="buttonRemove">Update</Button>
-            <Button className="buttonRemove" onClick={() => handleRemove(item.id)}>Remove</Button>
+            <button className="buttonRemove">Update</button>
+            <button className="buttonRemove" onClick={() => handleRemove(item.id)}>Remove</button>
           </div>
         </div>
       ))}
