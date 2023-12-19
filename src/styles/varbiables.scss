@@ -1,6 +1,9 @@
 @mixin BorderRadius24 {
     border-radius: 24px;
-    ;
+}
+@mixin OuterDropShadow {
+    box-shadow: 2px 2px 2px 0px $darkBlue;
+backdrop-filter: blur(42.5px);
 }
 @mixin PageBackground {
     background-color: #FEFEFE;
@@ -20,12 +23,34 @@
     border-radius: 48px;
     border: 1px solid $darkBlue;
     background: var(--ABI-White, #FEFEFE);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+}
+@mixin ButtonWhiteOnHover {
+    border-radius: 48px;
+    border: 1px solid $darkBlue;
+    background: $lightBlue;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+    @include OuterDropShadow();
 }
 
 @mixin ButtonBlue {
     border-radius: 48px;
     border: 1px solid var(--W, #FFF);
     background: $lightBlue;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+    padding-bottom: 4px;
+    padding-top: 4px;
 }
 
 $darkBlue: #3969BB;
