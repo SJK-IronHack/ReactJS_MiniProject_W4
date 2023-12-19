@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import classes from "../styles//list.module.scss";
+import Sidebar from "./Sidebar";
+import { useState } from "react";
+
 
 const Listing = ({ items, setItems }) => {
   const handleRemove = (id) => {
@@ -8,9 +11,13 @@ const Listing = ({ items, setItems }) => {
     // Update the state with the new array of items
     setItems(updatedItems);
   };
+  let [price, setPrices] = useState(false);
+
 
   return (
     <>
+          <Sidebar price={price} whenChanging = {whenChanging} />
+
       <div className={classes.listContainer}></div>
       {items.map((item) => (
         <div key={item.id} className={classes.listItem}>
