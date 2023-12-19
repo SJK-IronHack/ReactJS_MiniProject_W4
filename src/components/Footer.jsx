@@ -1,6 +1,5 @@
 import classes from "../styles/footer.module.css";
 import gitIcon from "../assets/github.png";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,7 +14,6 @@ const Footer = () => {
               </span>
               <a href="https://github.com/SJK-IronHack/ReactJS_MiniProject_W4">
                 <span> Github Repository </span>
-
               </a>
             </a>
           </div>

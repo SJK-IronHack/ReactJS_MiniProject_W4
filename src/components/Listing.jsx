@@ -4,10 +4,7 @@ import classes from "../styles/list.module.scss";
 import Rentals from "../assets/rentals.json";
 import { Button } from "react-bootstrap";
 
-
-const Listing = () => {
-  const [items, setItems] = useState(Rentals.results);
-
+const Listing = ({ items, setItems }) => {
   const handleRemove = (id) => {
     // Filter out the item with the given id
     const updatedItems = items.filter((item) => item.id !== id);
@@ -17,11 +14,15 @@ const Listing = () => {
 
   return (
     <>
-      <div className={classes.listContainer}>List Comp</div>
+      <div className={classes.listContainer}></div>
       {items.map((item) => (
         <div key={item.id} className={classes.listItem}>
           <Link to={`/listing/${item.id}`} className={classes.listItemLink}>
-            <img className={classes.imgTumbnail} src={item.picture_url.url} alt={item.name} />
+            <img
+              className={classes.imgTumbnail}
+              src={item.picture_url.url}
+              alt={item.name}
+            />
             <div className={classes.basicInfos}>
               <div className={classes.listingLocation}>
                 <p>{item.city}</p>
@@ -34,7 +35,12 @@ const Listing = () => {
               <p>{item.name}</p>
             </div>
           </Link>
-          <Button className="buttonRemove" onClick={() => handleRemove(item.id)}>Remove</Button>
+          <Button
+            className="buttonRemove"
+            onClick={() => handleRemove(item.id)}
+          >
+            Remove
+          </Button>
         </div>
       ))}
     </>
