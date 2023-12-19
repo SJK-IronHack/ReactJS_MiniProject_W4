@@ -7,27 +7,28 @@ import { Route, Routes } from "react-router-dom";
 import ListingDetail from "./components/ListingDetail";
 import AddHotel from "./pages/AddHotel";
 
+import './styles/app.scss';
+
 const App = () => {
   const [items, setItems] = useState(Rentals.results);
-  
+
 
   return (
     <>
       <NavBar />
-      <Footer />
       {/* <Sidebar /> */}
       <Routes>
         <Route
           path="/"
-          element={<Listing items={items} setItems={setItems}/>}
+          element={<Listing items={items} setItems={setItems} />}
         />
         <Route path="/listing/:hotelId" element={<ListingDetail items={items} setItems={setItems} />} />
         <Route
           path="/add"
-          element={<AddHotel items={items} setItems={setItems}  />}
-        />
+          element={<AddHotel items={items} setItems={setItems} />} />
         <Route path="*" element={"404 Page not found"} />
       </Routes>
+      <Footer />
     </>
   );
 };

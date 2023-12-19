@@ -1,21 +1,17 @@
-import classes from "../styles/footer.module.css";
+import classes from "../styles/footer.module.scss";
 import gitIcon from "../assets/github.png";
 
 const Footer = () => {
   return (
     <>
       <div className={classes.mainCont}>
-        <footer className="bg-dark text-center text-lg-start text-white">
-          <div className="text-center p-3">
-            <span>© {new Date().getFullYear()} Bearbnb </span>
-            <a href="">
-              <span style={{ textAlign: "center" }}>
-                <img src={gitIcon} height={25} width={25} />
-              </span>
+        <footer >
+          <div className="footerWrapper">
+        
               <a href="https://github.com/SJK-IronHack/ReactJS_MiniProject_W4">
-                <span> Github Repository </span>
+                <span> Our Github Repository →</span>
               </a>
-            </a>
+        
           </div>
         </footer>
       </div>

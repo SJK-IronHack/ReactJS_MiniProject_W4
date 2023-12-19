@@ -16,7 +16,7 @@ const Listing = ({ items, setItems }) => {
 
   return (
     <>
-          <Sidebar price={price} whenChanging = {whenChanging} />
+          {/* <Sidebar price={price} whenChanging = {whenChanging} /> */}
 
       <div className={classes.listContainer}></div>
       {items.map((item) => (
@@ -40,7 +40,7 @@ const Listing = ({ items, setItems }) => {
             </div>
           </Link>
           <button
-            className="buttonRemove"
+            className={classes.buttonRemove}
             onClick={() => handleRemove(item.id)}
           >
             Remove

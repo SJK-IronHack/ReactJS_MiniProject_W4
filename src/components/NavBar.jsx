@@ -21,13 +21,12 @@ const NavBar = () => {
             <Link to={`/`} className={classes.NavLink}>
               <p>Add Listing</p>
             </Link>
-            <Link to={`/`} className={classes.NavLink}>
+            <Link to={`/aboutus`} className={classes.NavLink}>
               <p>About Us</p>
             </Link>
           </div>
 
-          <Nav className="me-auto"></Nav>
-          <img src={menu} alt="Rental menu" height={30} width={30} />
+
         </Container>
       </Navbar>
     </>

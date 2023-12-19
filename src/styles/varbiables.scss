@@ -1,3 +1,32 @@
 @mixin BorderRadius24 {
-    border-radius: 24px;;
+    border-radius: 24px;
+    ;
 }
+@mixin PageBackground {
+    background-color: #FEFEFE;
+}
+
+@mixin SurfaceBackgroundBlur {
+    border-radius: 4px;
+    border: 1px solid var(--805, $darkBlue);
+    background: var(--ABI-Glass-BG, linear-gradient(112deg, rgba(239, 239, 239, 0.60) 8.14%, rgba(239, 239, 239, 0.08) 95.69%), rgba(245, 245, 245, 0.40));
+
+    /* DropShadow ABI Rot 1 */
+    box-shadow: -2px -2px 2px 0px $lightBlue;
+    backdrop-filter: blur(22.5px);
+}
+
+@mixin ButtonWhite {
+    border-radius: 48px;
+    border: 1px solid $darkBlue;
+    background: var(--ABI-White, #FEFEFE);
+}
+
+@mixin ButtonBlue {
+    border-radius: 48px;
+    border: 1px solid var(--W, #FFF);
+    background: $lightBlue;
+}
+
+$darkBlue: #3969BB;
+$lightBlue: #65C3EC;
