@@ -1,12 +1,14 @@
 .container {
-  height: 100%;
+  height: 500px;
   width: 300px;
   position: fixed;
   padding-top: 20px;
   z-index: -1;
   background-color: #f0f0f0;
   color: #000;
+  position: absolute;
 }
+
 
 .btn {
   background-color: #f0f0f0;

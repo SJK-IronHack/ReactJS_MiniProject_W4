@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { useEffect, useState } from "react";
 import Listing from "./components/Listing";
 import NavBar from "./components/NavBar";

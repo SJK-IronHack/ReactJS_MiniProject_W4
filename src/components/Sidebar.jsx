@@ -1,4 +1,4 @@
-import classes from "../styles/sidebar.module.css";
+import classes from "../styles/sidebar.module.scss";
 import home from "../assets/home.png";
 import about from "../assets/profile-user.png";
 

@@ -1,5 +1,9 @@
 .navbar {
   overflow-x: hidden;
+  position: sticky;
+  background-color: white;
+  top: 0px;
+  ;
 
 
   .navbarContainer {
@@ -7,6 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    position: sticky;
     width: 100%;
   }
 

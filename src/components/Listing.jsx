@@ -1,8 +1,5 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import classes from "../styles/list.module.scss";
-import Rentals from "../assets/rentals.json";
-import { Button } from "react-bootstrap";
+import classes from "../styles//list.module.scss";
 
 const Listing = ({ items, setItems }) => {
   const handleRemove = (id) => {
@@ -35,12 +32,12 @@ const Listing = ({ items, setItems }) => {
               <p>{item.name}</p>
             </div>
           </Link>
-          <Button
+          <button
             className="buttonRemove"
             onClick={() => handleRemove(item.id)}
           >
             Remove
-          </Button>
+          </button>
         </div>
       ))}
     </>

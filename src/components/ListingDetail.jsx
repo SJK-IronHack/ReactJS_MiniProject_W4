@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import Rentals from "../assets/rentals.json";
-import classes from "../styles/listingDetail.module.css";
-import "../styles/listingDetail.module.scss";
+import classes from "../styles/listingDetail.module.scss";
 
 const ListingDetail = () => {
   //const itemId = "6221624";
@@ -10,6 +9,10 @@ const ListingDetail = () => {
   return (
     <div>
       <div className={classes.itemDescription}>
+        <div className={classes.listingButtons}>
+          <button className="buttonRemove">Update</button>
+          <button className="buttonRemove">Remove</button>
+        </div>
         <h3> {itemProfile.name}</h3>
         <img src={itemProfile.picture_url.url} height={300} width={300} />
 
