@@ -8,6 +8,7 @@ import ListingDetail from "./components/ListingDetail";
 import AddHotel from "./pages/AddHotel";
 
 import './styles/app.scss';
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
   const [items, setItems] = useState(Rentals.results);
@@ -17,6 +18,7 @@ const App = () => {
     <>
       <NavBar />
       {/* <Sidebar /> */}
+      <Sidebar/>
       <Routes>
         <Route
           path="/"

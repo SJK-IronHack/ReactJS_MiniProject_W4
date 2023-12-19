@@ -13,12 +13,12 @@ const Sidebar = ({price, whenChanging}) => {
   return (
     <>
       <div className={classes.buttonsContainer}>
-        <div>
+      
           <label>
             Listings under 100$
             <input name="price" type="checkbox" checked={price} onChange={handleCheckedPrices} />
           </label>
-        </div>
+    
         {/* <div>
         <label>
             Country

@@ -1,27 +1,18 @@
 @import './varbiables.scss';
 
 
-.container {
-  height: 500px;
-  width: 300px;
-  position: fixed;
+.buttonsContainer {
   padding-top: 20px;
-  z-index: -1;
-  background-color: #f0f0f0;
-  color: #000;
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-content: space-around;
+
 }
 
 
 .btn {
-  background-color: #f0f0f0;
-  width: 100%;
-  margin: 5px 0;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  border: 1px #212529;
-  border-bottom: solid;
+@include ButtonBlue
 }
 
 .btn:hover {
@@ -36,7 +27,6 @@
 
 label {
   display: inline-block;;
-  width: 40px;
   height: 20px;
   background-color: #ccc;
   border-radius: 10px;
