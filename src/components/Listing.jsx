@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import classes from "../styles/list.module.css";
+import classes from "../styles//list.module.scss";
 import Rentals from "../assets/rentals.json";
 
 

@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import Rentals from "../assets/rentals.json";
-import classes from "../styles/listingDetail.module.css";
-// import  '../styles/listingDetail.module.scss';
+import classes from "../styles/listingDetail.module.scss";
 
 
 const ListingDetail = () => {
