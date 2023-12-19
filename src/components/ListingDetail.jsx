@@ -2,10 +2,11 @@ import { useParams } from "react-router-dom";
 // import Rentals from "../assets/rentals.json";
 import classes from "../styles/listingDetail.module.scss";
 
-const ListingDetail = ({setItems}) => {
+const ListingDetail = ({ items }) => {
   //const itemId = "6221624";
   const { hotelId } = useParams();
-  const itemProfile = setItems.find((item) => item.id === hotelId);
+  console.log(typeof hotelId);
+  const itemProfile = items.find((item) => item.id === hotelId);
   return (
     <div>
       <div className={classes.itemDescription}>
