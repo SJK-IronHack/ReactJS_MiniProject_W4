@@ -212,7 +212,7 @@ const AddHotel = ({ items, setItems }) => {
           </label>
 
           <br />
-          <button type="submit">Add Student</button>
+          <button type="submit">Add to Listing</button>
           <br />
           <br />
           <br />

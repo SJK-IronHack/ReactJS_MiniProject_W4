@@ -5,17 +5,22 @@ const Sidebar = ({ checkedPrice, setCheckedPrice }) => {
     <>
       <div className={classes.buttonsContainer}>
         <label>
-          Sort Listings by Name
+          Sort Listings by Price
+          <div className={classes.toggle}>
           <input
             name="price"
             type="checkbox"
             value={checkedPrice}
             onChange={(e) => setCheckedPrice(e.target.checked)}
           />
+          </div>
         </label>
         <label>
           Sort Listings by Price
+        <div className={classes.toggle}>
+
           <input name="price" type="checkbox" />
+        </div>
         </label>
       </div>
     </>

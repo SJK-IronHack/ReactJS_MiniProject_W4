@@ -30,19 +30,7 @@
     box-sizing: border-box;
     margin: 16px;
 
-    a {
-        all: unset;
-        display: grid;
-        border: 1px $darkBlue solid;
-        @include BorderRadius24;
-        padding-inline: 24px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        grid-row-start: 3;
 
-
-
-    }
 
 
     img {
@@ -51,10 +39,19 @@
     }
 
     .description {
-        height: 100%;
+        height: auto;
         grid-column: 3/6;
         text-align: left;
-        display: flex;
-        flex-direction: column;
-justify-content: space-between;    }
+
+        a {
+            all: unset;
+            display: grid;
+            border: 1px $darkBlue solid;
+            @include BorderRadius24;
+            padding-inline: 24px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            grid-row-start: 3;
+        }
+    }
 }

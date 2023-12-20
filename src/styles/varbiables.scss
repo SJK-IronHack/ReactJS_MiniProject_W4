@@ -32,6 +32,8 @@ backdrop-filter: blur(42.5px);
     margin: auto;
     align-items: center;
     width: fit-content;
+    height: 34px;
+
 }
 @mixin ButtonWhiteOnHover {
     border-radius: 48px;
@@ -55,6 +57,8 @@ backdrop-filter: blur(42.5px);
     text-align: center;
     padding-bottom: 4px;
     padding-top: 4px;
+    height: 34px;
+
 }
 
 $darkBlue: #3969BB;

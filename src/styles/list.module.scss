@@ -17,6 +17,11 @@
   padding: 8px;
   @include SurfaceBackgroundBlur;
   border-radius: 24px;
+  margin-inline:8px;
+  &:hover {
+    border: 1px $darkBlue solid;
+
+  }
 }
 
 .listItemDescription {

@@ -24,6 +24,7 @@
 .navbar {
 
 
+
 }
   .links {
     display: flex;
@@ -31,16 +32,17 @@
     gap: 24px;
     padding-top: 16px;
 
+
     .NavLink {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   padding-inline: 16px;
   border-radius: 24px;
   width: fit-content;
   @include ButtonWhite;
-  padding-top: 4px;
-  padding-bottom: 4px;
+
   
     }
   }
