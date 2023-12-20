@@ -14,16 +14,12 @@ import AboutUs from "./components/AboutUs";
 
 const App = () => {
   const [items, setItems] = useState(Rentals.results);
-  const [data, setData] = useState(Rentals.results);
 
   return (
     <>
       <NavBar />
       <Routes>
-        <Route
-          path="/"
-          element={<Listing items={items} setItems={setItems} />}
-        />
+        <Route path="/" element={<Listing data={items} setData={setItems} />} />
         <Route
           path="/listing/:hotelId"
           element={<ListingDetail items={items} setItems={setItems} />}

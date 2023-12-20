@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import classes from "../styles/addHotel.module.scss"
+import classes from "../styles/addHotel.module.scss";
 
 const AddHotel = ({ items, setItems }) => {
   const [name, setName] = useState("");
@@ -18,7 +18,7 @@ const AddHotel = ({ items, setItems }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log({ name, country, url, host, desc });
+    console.log({ name, country, url, host, desc, price });
 
     setItems([
       {
@@ -39,7 +39,7 @@ const AddHotel = ({ items, setItems }) => {
         bathrooms: 2.0,
         bedrooms: 2,
         beds: 2,
-        price: 72,
+        price: price,
         cleaning_fee: 25,
         review_scores_rating: 90,
         cancellation_policy: "moderate",
