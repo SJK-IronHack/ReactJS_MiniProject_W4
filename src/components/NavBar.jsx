@@ -15,18 +15,13 @@ const NavBar = () => {
             <Link to={`/`} className={classes.NavLink}>
               <p>Home</p>
             </Link>
-            <Link to={`/`} className={classes.NavLink}>
-              <p>Listings</p>
-            </Link>
-            <Link to={`/`} className={classes.NavLink}>
-              <p>Add Listing</p>
+            <Link to={`/add`} className={classes.NavLink}>
+              <p>Add Hotel</p>
             </Link>
             <Link to={`/aboutus`} className={classes.NavLink}>
               <p>About Us</p>
             </Link>
           </div>
-
-
         </Container>
       </Navbar>
     </>
