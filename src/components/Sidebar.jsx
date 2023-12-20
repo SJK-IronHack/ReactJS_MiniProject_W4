@@ -7,21 +7,21 @@ const Sidebar = ({ checkedPrice, setCheckedPrice }) => {
         <label>
           Sort Listings by Price
           <div className={classes.toggle}>
-          <input
-            name="price"
-            type="checkbox"
-            value={checkedPrice}
-            onChange={(e) => setCheckedPrice(e.target.checked)}
-          />
+            <input
+              name="price"
+              type="checkbox"
+              value={checkedPrice}
+              onChange={(e) => setCheckedPrice(e.target.checked)}
+            />
           </div>
         </label>
-        <label>
+        {/* <label>
           Sort Listings by Price
         <div className={classes.toggle}>
 
           <input name="price" type="checkbox" />
         </div>
-        </label>
+        </label> */}
       </div>
     </>
   );
