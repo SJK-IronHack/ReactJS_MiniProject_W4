@@ -27,7 +27,6 @@ const Listing = ({ data, setData }) => {
     <>
       <Sidebar checkedPrice={checkedPrice} setCheckedPrice={setCheckedPrice} />
 
-      <p>Checkbox state in Parent: {checkedPrice ? "Checked" : "Unchecked"}</p>
       {checkedPrice && (
         <div>
           {data.map((item) => (
