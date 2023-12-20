@@ -1,0 +1,60 @@
+@import './varbiables.scss';
+
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 16px;
+
+}
+
+.aboutUs {
+    display: flex;
+    gap: 8px;
+    box-sizing: border-box;
+    padding-inline: 16px;
+
+
+}
+
+.card {
+    @include SurfaceBackgroundBlur;
+    @include BorderRadius24;
+
+    display: grid;
+    grid-template: repeat(5, 1fr);
+    max-width: 100%;
+    padding: 16px;
+    gap: 16px;
+    box-sizing: border-box;
+    margin: 16px;
+
+    a {
+        all: unset;
+        display: grid;
+        border: 1px $darkBlue solid;
+        @include BorderRadius24;
+        padding-inline: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        grid-row-start: 3;
+
+
+
+    }
+
+
+    img {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .description {
+        height: 100%;
+        grid-column: 3/6;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+justify-content: space-between;    }
+}

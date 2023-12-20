@@ -1,3 +1,7 @@
+@mixin InputsUnderline {
+box-shadow: -2px -2px 4px 0px $lightBlue;
+}
+
 @mixin BorderRadius24 {
     border-radius: 24px;
 }

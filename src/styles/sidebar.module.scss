@@ -8,11 +8,20 @@
   justify-content: baseline;
   align-content: space-around;
 
+  label {
+    display: inline-block;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 32px;
+  }
 }
 
 
 .btn {
-@include ButtonBlue
+  @include ButtonBlue
 }
 
 .btn:hover {
@@ -25,15 +34,6 @@
   display: none;
 }
 
-label {
-  display: inline-block;;
-  height: 20px;
-  background-color: #ccc;
-  border-radius: 10px;
-  position: relative;
-  cursor: pointer;
-  margin-left: 32px;
-}
 
 label::before {
   content: "";
@@ -47,10 +47,10 @@ label::before {
   transition: transform 0.3s;
 }
 
-#toggle:checked + label {
+#toggle:checked+label {
   background-color: #2196F3;
 }
 
-#toggle:checked + label::before {
+#toggle:checked+label::before {
   transform: translateX(20px);
 }

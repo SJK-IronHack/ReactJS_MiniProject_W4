@@ -9,6 +9,7 @@ import AddHotel from "./pages/AddHotel";
 
 import './styles/app.scss';
 import Sidebar from "./components/Sidebar";
+import AboutUs from "./components/AboutUs";
 
 const App = () => {
   const [items, setItems] = useState(Rentals.results);
@@ -28,6 +29,9 @@ const App = () => {
         <Route
           path="/add"
           element={<AddHotel items={items} setItems={setItems} />} />
+     
+         <Route path="/aboutus" element={<AboutUs/>} />
+
         <Route path="*" element={"404 Page not found"} />
       </Routes>
       <Footer />
