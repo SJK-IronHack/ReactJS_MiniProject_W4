@@ -1,0 +1,58 @@
+@import './varbiables.scss';
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: $darkBlue;
+    gap: 8px;
+    padding-inline: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    color: $darkBlue;
+    place
+
+
+    label {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        width: 100%;
+
+    }
+
+    ::placeholder {
+        color: $darkBlue;
+        opacity: 1; /* Firefox */
+      }
+
+    input, textarea {
+
+        :-ms-input-placeholder, textarea::-webkit-input-placeholder {
+            color: $lightBlue;
+        }
+        width: 100%;
+        box-sizing: border-box;
+
+
+        height: 45px;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        font-size: 15px;
+        background-color: transparent;
+        @include InputsUnderline;
+        color: $darkBlue;
+
+        &:focus {
+            border: 0px solid transparent;
+            box-shadow: 3px 3px 10px $lightBlue,
+                inset 3px 3px 10px $lightBlue;
+            transition: 0.3s;
+            padding-inline: 20px;
+
+        }
+    }
+}

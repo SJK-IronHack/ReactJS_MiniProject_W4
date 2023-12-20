@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import classes from "../styles/addHotel.module.scss"
 
 const AddHotel = ({ items, setItems }) => {
   const [name, setName] = useState("");
@@ -66,8 +67,8 @@ const AddHotel = ({ items, setItems }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <span>Add Hotel Page</span>
+      <form onSubmit={handleSubmit} className={classes.formContainer}>
+        <h3>Add Hotel Page</h3>
         <div>
           <label>
             Name :
