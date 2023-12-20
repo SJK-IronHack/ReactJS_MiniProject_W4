@@ -1,35 +1,22 @@
 import classes from "../styles/sidebar.module.scss";
-import home from "../assets/home.png";
-import about from "../assets/profile-user.png";
-import { useEffect, useState } from "react";
 
-const Sidebar = ({price, whenChanging}) => {
-
-
-        const handleCheckedPrices = (e) => whenChanging(e.target.checked)
-
-
-
+const Sidebar = ({ checkedPrice, setCheckedPrice }) => {
   return (
     <>
       <div className={classes.buttonsContainer}>
-      
-          <label>
-            Listings under 100$
-            <input name="price" type="checkbox" checked={price} onChange={handleCheckedPrices} />
-          </label>
-    
-        {/* <div>
         <label>
-            Country
-            <select name="country">
-              <option value="">-- All --</option>
-              <option value="Spain">Spain</option>
-              <option value="Germany">Germany</option>
-              <option value="France">France</option>
-            </select>
-          </label>
-        </div> */}
+          Sort Listings by Name
+          <input
+            name="price"
+            type="checkbox"
+            value={checkedPrice}
+            onChange={(e) => setCheckedPrice(e.target.checked)}
+          />
+        </label>
+        <label>
+          Sort Listings by Price
+          <input name="price" type="checkbox" />
+        </label>
       </div>
     </>
   );

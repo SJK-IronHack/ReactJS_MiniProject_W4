@@ -1,22 +1,26 @@
 import { Link } from "react-router-dom";
 import classes from "../styles//list.module.scss";
 import Sidebar from "./Sidebar";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import SortingRating from "./SortingRating";
 
 const Listing = ({ items, setItems }) => {
+  const [checkedPrice, setCheckedPrice] = useState(false);
+
   const handleRemove = (id) => {
     // Filter out the item with the given id
     const updatedItems = items.filter((item) => item.id !== id);
     // Update the state with the new array of items
     setItems(updatedItems);
   };
-  let [price, setPrices] = useState(false);
 
+  useEffect(() => {}, [checkedPrice]);
 
   return (
     <>
-          {/* <Sidebar price={price} whenChanging = {whenChanging} /> */}
+      <Sidebar checkedPrice={checkedPrice} setCheckedPrice={setCheckedPrice} />
+      {checkedPrice && <SortingRating items={items} setItems={setItems} />}
+      <p>Checkbox state in Parent: {checkedPrice ? "Checked" : "Unchecked"}</p>
 
       <div className={classes.listContainer}></div>
       {items.map((item) => (
@@ -36,10 +40,11 @@ const Listing = ({ items, setItems }) => {
             </div>
 
             <div className={classes.listItemDescription}>
-              <p>{item.name}</p>
+              <p style={{ marginTop: "25px" }}>{item.name}</p>
             </div>
           </Link>
           <button
+            style={{ marginTop: "25px" }}
             className={classes.buttonRemove}
             onClick={() => handleRemove(item.id)}
           >
