@@ -19,7 +19,8 @@ const Sidebar = ({ checkedPrice, setCheckedPrice }) => {
           Sort Listings by Price
         <div className={classes.toggle}>
 
-          <input name="price" type="checkbox" />
+          <input name="price" type="checkbox" className={classes.toggleState} />
+          <div className={classes.indicator}></div>
         </div>
         </label> */}
       </div>
