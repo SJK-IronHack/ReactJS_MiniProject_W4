@@ -9,9 +9,11 @@ const Listing = ({ data, setData }) => {
   const [checkedPrice, setCheckedPrice] = useState(false);
   const handleRemove = (id) => {
     // Filter out the item with the given id
-    const updatedItems = data.filter((item) => item.id !== id);
+    const updatedItems = items.filter((item) => item.id !== id);
+    const updatedItems2 = data.filter((item) => item.id !== id);
     // Update the state with the new array of data
     setItems(updatedItems);
+    setData(updatedItems2);
   };
 
   const sortData = () => {
