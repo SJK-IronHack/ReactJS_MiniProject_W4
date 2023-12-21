@@ -16,14 +16,21 @@
   justify-content: center;
   align-items: center;
   padding-inline: 24px;
-  height: 32px;
+  height: 24px;
 
   border-radius: 10px;
-  background-color: #ebf5fc;
-@include ButtonBlue;
-cursor: pointer;
-color: white;
+  background-color: $lightBlue;
+  cursor: pointer;
+  color: white;
+  height: 32px;
+  @include BorderRadius24;
 }
-input[type="checkbox"]{
-  display:none;
+
+input[type="checkbox"] {
+  display: none;
+
+  &:checked+label {
+    background-color: $darkBlue;
+    ;
+  }
 }
