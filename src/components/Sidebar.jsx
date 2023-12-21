@@ -6,7 +6,7 @@ const Sidebar = ({ checkedPrice, setCheckedPrice }) => {
       <div className={classes.buttonsContainer}>
         <label>
           Sort Listings by Price
-          <div className={classes.toggle}>
+          <div className={classes.checkboxContainer}>
             <input
               name="price"
               type="checkbox"
